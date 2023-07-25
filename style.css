@@ -1,11 +1,17 @@
 :root{
     --primary-color: lightcoral;
-    --secondary-color: DimGrey;
+    --secondary-color: rgb(49, 49, 49);
     --tertiary-color: GainsBoro;
 }
+
 body{
+    margin: 0px 10px 0px 5px;
+    height: 100vh;
     background-color: var(--primary-color);
     font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #container{
     background: #f7f7f7;
@@ -13,7 +19,7 @@ body{
     width: 360px;
     box-shadow: 5px 5px 5px var(--tertiary-color);
     border-radius: 20px;
-    margin: 100px auto;
+    margin: 0px;
     padding: 10px;
 }
 .title{
@@ -56,4 +62,12 @@ body{
     font-size: 20px;
     margin-top: 5px;
     text-align: center;
+}
+@media (max-width: 410px){
+    #container{
+        width: 330px;
+    }
+    .title{
+        font-size: 9px;
+    }
 }
